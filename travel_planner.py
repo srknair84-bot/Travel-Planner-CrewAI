@@ -28,7 +28,7 @@ planner = Agent(role="Travel Planner",
                  verbose=True
                 )
 task = Task(description=f"Create a travel plan for the user who wants to travel to {city}." ,
-             expected_output="suggests 3 places to visit there . For Example Amber Fort - hilltop fort with mirrored halls, go early",
+             expected_output="suggests 3 places to visit there . For Example Amber Fort - hilltop fort with mirrored halls, go early - in one line", 
              agent=planner
             )
 crew = Crew(agents=[planner], tasks=[task])
